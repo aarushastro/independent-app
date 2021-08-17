@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>password generator</title>
+    <script type="text/javascript">
+
+     function genRand() {
+	var tmp = "";
+	var availChars = "abcd12345";
+	for (var i = 0; i < 8; i++)
+	tmp += availChars.charAt(Math.floor(Math.random() * availChars.length));
+    document.getElementById("display1").innerHTML=tmp;
+
+
+    
+}
+       
+
+    
+    </script>
+</head>
+<body>
+    <center>
+    <h1>password generator</h1>
+    <button class="btn btn-alert"onclick="genRand();" style="width:200px; height: 120px; font-size: large; background-color: black; color: white;">Generate</button>
+    <div id="display1" style="font-size: 100px; color: white;"></div>
+
+    </center>
+    
+</body>
+</html>
